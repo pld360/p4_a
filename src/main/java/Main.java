@@ -16,19 +16,55 @@ class Main {
       Scanner scanner = new Scanner(System.in);
       Service s = new Service();
 
-      System.out.print("Podaj imię studenta: ");
-      String imie = scanner.nextLine();
+      while (true) {
+        System.out.println("1. Dodaj studenta");
+        System.out.println("2. Wyświetl wszystkich studentów");
+        System.out.println("3. Wyjście");
+        System.out.print("Wybierz opcję: ");
 
-      System.out.print("Podaj wiek studenta: ");
-      int wiek = scanner.nextInt();
-      scanner.nextLine();
-      
-      s.addStudent(new Student(imie, wiek));
+        int wybor = scanner.nextInt();
+        scanner.nextLine();
 
-      var students = s.getStudents();
-      for(Student current : students) {
-        System.out.println(current.ToString());
+        switch (wybor) {
+          case 1:
+            System.out.print("Podaj imię studenta: ");
+            String imie = scanner.nextLine();
+
+            System.out.print("Podaj wiek studenta: ");
+            int wiek = scanner.nextInt();
+            scanner.nextLine();
+
+            s.addStudent(new Student(imie, wiek));
+            System.out.println("Student dodany.");
+            break;
+
+          case 2:
+            var students = s.getStudents();
+            if (students.isEmpty()) {
+              System.out.println("Brak studentów.");
+            } else {
+              System.out.println("\nLista studentów:");
+              for (Student current : students) {
+                System.out.println(current.ToString());
+              }
+            }
+            break;
+
+          case 3:
+            System.out.println("Koniec programu.");
+            break;
+
+          default:
+            System.out.println("Nieprawidłowa opcja. Spróbuj ponownie.");
+            break;
+        }
+
+        if (wybor == 3) {
+          break;
+        }
       }
+
+      scanner.close();
     } catch (IOException e) {
 
     }

@@ -5,3 +5,5 @@ Marian 20
 Aleksandra 21
 Andrzej 24
 Jozef 67
+Bartosz 19
+abc 20
