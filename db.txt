@@ -1,9 +1,1 @@
-Krzysztof 20
-Janusz 40
-Andrzej 50
-Marian 20
-Aleksandra 21
-Andrzej 24
-Jozef 67
-Bartosz 19
-abc 20
+Jan Kowalski 21

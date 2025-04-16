@@ -30,11 +30,14 @@ class Main {
             System.out.print("Podaj imię studenta: ");
             String imie = scanner.nextLine();
 
+            System.out.print("Podaj nazwisko studenta: ");
+            String nazwisko = scanner.nextLine();
+
             System.out.print("Podaj wiek studenta: ");
             int wiek = scanner.nextInt();
             scanner.nextLine();
 
-            s.addStudent(new Student(imie, wiek));
+            s.addStudent(new Student(imie, nazwisko, wiek));
             System.out.println("Student dodany.");
             break;
 
