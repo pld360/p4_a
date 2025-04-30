@@ -24,7 +24,7 @@ public class Student {
   public String GetDay() {return Day;}
 
   public String ToString() {
-    return FirstName + " " + LastName + " " + Integer.toString(Age) + " " + Year + "." + Month + "." + Day;
+    return FirstName + " " + LastName + " " + Integer.toString(Age) + " " + Year + " " + Month + " " + Day;
   }
 
   public static Student Parse(String str) {
