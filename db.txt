@@ -1,1 +1,2 @@
-Jan Kowalski 21
+1Jan Kowalski 20 2005.04.29
+Andrzej Kowalski 20 2005.03.14
