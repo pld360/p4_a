@@ -19,8 +19,7 @@ class Main {
       while (true) {
         System.out.println("1. Dodaj studenta");
         System.out.println("2. Wyświetl wszystkich studentów");
-        System.out.println("3. Wyszukaj studenta po imieniu");
-        System.out.println("4. Wyjście");
+        System.out.println("3. Wyjście");
         System.out.print("Wybierz opcję: ");
 
         int wybor = scanner.nextInt();
@@ -76,17 +75,6 @@ class Main {
             break;
 
           case 3:
-            System.out.print("Podaj imię studenta do wyszukania: ");
-            String searchName = scanner.nextLine();
-            Student found = s.findStudentByName(searchName);
-            if(found != null) {
-              System.out.println("Znaleziono studenta: " + found.ToString());
-            } else {
-              System.out.println("Nie znaleziono studenta o podanym imieniu.");
-            }
-            break;
-            
-          case 4:
             System.out.println("Koniec programu.");
             break;
 

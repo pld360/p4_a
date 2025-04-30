@@ -1,2 +1,7 @@
 1Jan Kowalski 20 2005.04.29
 Andrzej Kowalski 20 2005.03.14
+ABC DEF 18 2000.01.03
+Abc Def 25 2000.05.09
+AAA BBB 20 2005.12.01
+Jan Kowalski 20 2005.03.04
+Janusz Kowal 20 2005.05.04
