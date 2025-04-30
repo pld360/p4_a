@@ -35,9 +35,30 @@ class Main {
 
             System.out.print("Podaj wiek studenta: ");
             int wiek = scanner.nextInt();
-            scanner.nextLine();
 
-            s.addStudent(new Student(imie, nazwisko, wiek));
+            System.out.print("Podaj rok urodzenia studenta: ");
+            String rokUro = scanner.nextLine();
+            if (Integer.parseInt(rokUro) < 1 || Integer.parseInt(rokUro) > 3000) {
+              System.out.println("Nieprawidłowy rok urodzenia. Podaj rok ponownie.");
+              rokUro = scanner.nextLine();
+            }
+
+            System.out.print("Podaj miesiąc urodzenia studenta: ");
+            String miesUro = scanner.nextLine();
+            if (Integer.parseInt(miesUro) < 1 || Integer.parseInt(miesUro) > 12) {
+              System.out.println("Nieprawidłowy miesiąc urodzenia. Podaj miesiąc ponownie.");
+              miesUro = scanner.nextLine();
+            }
+
+            System.out.print("Podaj dzień urodzenia studenta: ");
+            String dzienUro = scanner.nextLine();
+            if (Integer.parseInt(dzienUro) < 1 || Integer.parseInt(dzienUro) > 31) {
+              System.out.println("Nieprawidłowy dzień urodzenia. Podaj dzień ponownie.");
+              dzienUro = scanner.nextLine();
+            }
+            scanner.nextLine();
+            
+            s.addStudent(new Student(imie, nazwisko, wiek, rokUro, miesUro, dzienUro));
             System.out.println("Student dodany.");
             break;
 
